@@ -1,16 +1,12 @@
-function Welcome(props){
-  return(
+import React from 'react'
+import Welcome from './pages/Welcome/Welcome'
+
+function App() {
+  return (
     <div>
-      <h1>Welcome back {props.username}</h1>
+      <Welcome username="Hassan"/>
     </div>
   )
 }
 
-function App (){
-  return(
-    <div>
-      <Welcome username='Hassan'/>
-    </div>
-  )
-}
-export default App;
+export default App
